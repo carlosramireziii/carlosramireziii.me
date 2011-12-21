@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Bitstream Vera Sans";
+  src: url(../veramono.ttf);
+}
+  
+* {
+  margin: 0;
+  padding: 0;
+}
+  
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #362624;
+  font-family: "Bitstream Vera Sans", monospace;
+  color: #e6e1c3;
+} 
+  
+#distance {
+  float: left;
+  width: 1px;
+  height: 50%;
+  margin-bottom: -88px;
+}
+
+#main {
+  width: 570px;
+  height: 175px;
+  margin: 0 auto;
+  position: relative;
+  clear: left;
+}
+
+pre { font-family: "Bitstream Vera Sans", monospace }
+
+h1 {
+  display: inline;
+  font-weight: normal;
+}
+  
+a {
+  text-decoration: none;
+  color: #d8d662;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+    
+}
+
+.code, h1 { font-size: 22px; }
+
+.code {
+  .t  { color: #e6e1c3; }   // text
+  .co { color: #6b99ba; }   // constant
+  .fl { color: #6b99ba; }   // float
+  .r  { color: #ef5d31; }   // keyword
+  .s  { color: #d8d662; }   // string
+  .sy { color: #6b99ba; }   // symbol
+  .i  { color: #737373; }   // invisible char
+}
